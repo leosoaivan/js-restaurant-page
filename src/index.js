@@ -1,7 +1,9 @@
 import './stylesheets/main.css';
 import ShrimpImage from './images/shrimp.jpeg';
 
-let backgroundImage = new Image('100%', '100%');
+const body = document.getElementById('content');
+
+let backgroundImage = new Image();
 backgroundImage.src = ShrimpImage;
 
-document.body.appendChild(backgroundImage);
+body.appendChild(backgroundImage);
