@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"html, body {\\n  height: 100vh;\\n  margin: 0;\\n  padding: 0;\\n}\\n\\n#content {\\n  background-size: 100%;\\n  height: 100%;\\n  width: 100%;\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/stylesheets/main.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"html, body {\\n  height: 100vh;\\n  margin: 0;\\n  padding: 0;\\n}\\n\\n#content {\\n  background-size: cover;\\n  height: 100%;\\n  width: 100%;\\n}\\n\\n.address {\\n  display: flex;\\n  background-color: black;\\n  color: white; \\n  line-height: 2.25em;\\n  font-family: 'Raleway', sans-serif;\\n  justify-content: center;\\n  font-size: 1.25em;\\n  font-weight: 400;\\n}\\n\\n.address-phonenumber {\\n  margin-left: 2em;\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/stylesheets/main.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -150,7 +150,7 @@ eval("module.exports = __webpack_require__.p + \"ffec40cccccfafeb40283a2f9e6e0eb
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _stylesheets_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stylesheets/main.css */ \"./src/stylesheets/main.css\");\n/* harmony import */ var _stylesheets_main_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_main_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_kingoystershrooms_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/kingoystershrooms.jpeg */ \"./src/images/kingoystershrooms.jpeg\");\n/* harmony import */ var _images_kingoystershrooms_jpeg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_kingoystershrooms_jpeg__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst body = document.getElementById('content');\n\n/**\n * Background\n */\nbody.style.backgroundImage = `url(${_images_kingoystershrooms_jpeg__WEBPACK_IMPORTED_MODULE_1___default.a})`;\n\n/**\n * Address bar\n */\nconst addressDom = document.createElement('div');\nconst addressText = document.createTextNode('835 North Royal Street, Alexandria, VA 22314');\n\naddressDom.className = 'address';\naddressDom.appendChild(address);\nbody.appendChild(addressDom);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _stylesheets_main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./stylesheets/main.css */ \"./src/stylesheets/main.css\");\n/* harmony import */ var _stylesheets_main_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_main_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_kingoystershrooms_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/kingoystershrooms.jpeg */ \"./src/images/kingoystershrooms.jpeg\");\n/* harmony import */ var _images_kingoystershrooms_jpeg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_kingoystershrooms_jpeg__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nconst body = document.getElementById('content');\n\n/**\n * Background\n */\nbody.style.backgroundImage = `url(${_images_kingoystershrooms_jpeg__WEBPACK_IMPORTED_MODULE_1___default.a})`;\n\n/**\n * Header\n */\nconst addressDom = document.createElement('header');\naddressDom.className = 'address';\n\nconst addressText = document.createElement('div');\naddressText.innerText = '835 North Capital Street, Alexandria, VA 12345';\naddressText.className = 'address-text'\n\nconst phoneNumber = document.createElement('div');\nphoneNumber.innerText = '(123) 456-7890';\nphoneNumber.className = 'address-phonenumber';\n\naddressDom.appendChild(addressText);\naddressDom.appendChild(phoneNumber);\nbody.appendChild(addressDom);\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -162,17 +162,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./main.css */ \"./node_modules/css-loader/dist/cjs.js!./src/stylesheets/main.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/stylesheets/main.css?");
-
-/***/ }),
-
-/***/ 0:
-/*!*******************************************************!*\
-  !*** multi ./src/index.js ./src/stylesheets/main.css ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("__webpack_require__(/*! ./src/index.js */\"./src/index.js\");\nmodule.exports = __webpack_require__(/*! ./src/stylesheets/main.css */\"./src/stylesheets/main.css\");\n\n\n//# sourceURL=webpack:///multi_./src/index.js_./src/stylesheets/main.css?");
 
 /***/ })
 

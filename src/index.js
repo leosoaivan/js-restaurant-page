@@ -9,11 +9,19 @@ const body = document.getElementById('content');
 body.style.backgroundImage = `url(${Shrooms})`;
 
 /**
- * Address bar
+ * Header
  */
-const addressDom = document.createElement('div');
-const addressText = document.createTextNode('835 North Royal Street, Alexandria, VA 22314');
-
+const addressDom = document.createElement('header');
 addressDom.className = 'address';
-addressDom.appendChild(address);
+
+const addressText = document.createElement('div');
+addressText.innerText = '835 North Capital Street, Alexandria, VA 12345';
+addressText.className = 'address-text'
+
+const phoneNumber = document.createElement('div');
+phoneNumber.innerText = '(123) 456-7890';
+phoneNumber.className = 'address-phonenumber';
+
+addressDom.appendChild(addressText);
+addressDom.appendChild(phoneNumber);
 body.appendChild(addressDom);

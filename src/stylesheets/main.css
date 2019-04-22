@@ -5,7 +5,22 @@ html, body {
 }
 
 #content {
-  background-size: 100%;
+  background-size: cover;
   height: 100%;
   width: 100%;
+}
+
+.address {
+  display: flex;
+  background-color: black;
+  color: white; 
+  line-height: 2.25em;
+  font-family: 'Raleway', sans-serif;
+  justify-content: center;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.address-phonenumber {
+  margin-left: 2em;
 }
