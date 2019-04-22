@@ -1,9 +1,12 @@
-import './stylesheets/main.css';
-import ShrimpImage from './images/shrimp.jpeg';
+import Shrimp from './images/shrimp.jpeg';
 
 const body = document.getElementById('content');
 
-let backgroundImage = new Image();
-backgroundImage.src = ShrimpImage;
+/**
+ * Background
+ */
+body.style.backgroundImage = `url(${Shrimp})`;
 
-body.appendChild(backgroundImage);
+/**
+ * Address bar
+ */
